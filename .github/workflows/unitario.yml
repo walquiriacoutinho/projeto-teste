@@ -2,9 +2,9 @@ name: unitario
 
 on:
 push:
-branches: ["main"]
+branches: ["test_unitarios"]
 pull_request:
-branches: ["main"]
+branches: ["test_unitarios"]
 
 jobs:
 test:
@@ -26,4 +26,5 @@ steps:
 
   - name: Rodar testes
     run: pytest
+
 

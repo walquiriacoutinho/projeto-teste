@@ -24,3 +24,4 @@ def test_multiplicando_raises_when_x_is_string():
 def test_multiplicando_raises_when_x_is_float():
     with pytest.raises(ValueError):
         multiplicando(5.25)
+        

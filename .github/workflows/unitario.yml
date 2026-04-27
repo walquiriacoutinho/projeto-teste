@@ -1,14 +1,14 @@
 name: unitario
 
 on:
-push:
-branches: ["test_unitarios"]
+  push:
+    branches: ["main"]
 pull_request:
-branches: ["test_unitarios"]
+  branches: ["main"]
 
 jobs:
-test:
-runs-on: ubuntu-latest
+  test:
+    runs-on: ubuntu-latest
 
 steps:
   - name: Checkout do código
@@ -26,5 +26,3 @@ steps:
 
   - name: Rodar testes
     run: pytest
-
-
